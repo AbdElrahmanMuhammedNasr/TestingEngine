@@ -5,6 +5,7 @@ async function startTest(input) {
         initialState: 1
     };
 
+
     console.log(input);
     console.log('------------- startTest ---------------- ')
     for (const element of input) {
