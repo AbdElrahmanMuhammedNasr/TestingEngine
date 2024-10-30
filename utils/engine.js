@@ -7,11 +7,12 @@ async function startTest(input) {
 
     console.log(input);
     console.log('------------- startTest ---------------- ')
-
     for (const element of input) {
         let currentStage = input.find(i => i.order === metaData.initialState)
+        let nextStage = input.find(i => i.order === metaData.initialState+1)
+        let requirementNextStage = nextStage ? nextStage.requirement : null;
         let nextMetaDataInput;
-        nextMetaDataInput = await createRequestManager(currentStage);
+        nextMetaDataInput = await createRequestManager(currentStage,requirementNextStage);
         if (currentStage.isEnd === true) {
             return;
         }else {
