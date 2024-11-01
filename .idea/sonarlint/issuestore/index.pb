@@ -24,3 +24,9 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+A
+public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+A
+public/styles.css,f\c\fcdc5740ca959c5b3fe4180645f29cb3fe75fa3b
+@
+public/script.js,5\d\5de5f77d996438f156301a9054232b9892fe9b51

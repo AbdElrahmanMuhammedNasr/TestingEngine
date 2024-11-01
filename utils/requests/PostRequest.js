@@ -10,7 +10,10 @@ async function createPostRequest(currentStage,requirementNextStage ) {
 }
 
 
-function  generateNextMetaDataInput(response , requirementNextStage){
+function  generateNextMetaDataInput(response , requirementNextStage = null){
+    if(requirementNextStage == null){
+        return {}
+    }
     let next= {}
     for (const requirement of requirementNextStage) {
         const {type , value ,getFromPrevious} = requirement;
